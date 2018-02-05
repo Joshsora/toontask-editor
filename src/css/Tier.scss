@@ -1,0 +1,27 @@
+x-tier {
+  display: block;
+  margin-bottom: 1em;
+
+  .segment.top {
+    display: grid;
+    grid-template-columns: auto 140px;
+
+    .header {
+      margin: 0;
+
+      input[name="title"] {
+        font-weight: bold;
+      }
+    }
+
+    button {
+      height: 36px;
+      margin: 3px 0;
+    }
+  }
+
+  .header.attached {
+    display: grid;
+    grid-template-columns: auto 124px;
+  }
+}

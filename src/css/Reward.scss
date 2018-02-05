@@ -1,0 +1,23 @@
+x-reward {
+  display: block;
+  margin-bottom: 1em;
+
+  .segment.top {
+    display: grid;
+    grid-template-columns: auto 156px;
+
+    .header {
+      margin: 0;
+
+      input[name="title"] {
+        font-weight: bold;
+        line-height: 42px;
+      }
+    }
+
+    button {
+      height: 36px;
+      margin: 3px 0;
+    }
+  }
+}
