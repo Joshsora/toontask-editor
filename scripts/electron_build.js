@@ -2,7 +2,7 @@ const builder = require('electron-builder');
 
 const opts = {
   config: {
-    appId: 'com.electron.toontask-editor',
+    appId: 'com.joshsora.toontask-editor',
     productName: 'ToonTask Editor',
     copyright: 'Copyright © 2018 Joshua Scott',
     win: {
