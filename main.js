@@ -14,6 +14,7 @@ const BrowserWindow = electron.BrowserWindow;
 // This module is useful for determining if we're in a
 // development environment
 const isDev = require('electron-is-dev');
+const autoUpdater = require('electron-updater').autoUpdater;
 
 // Other required modules
 const url = require('url');
@@ -84,3 +85,6 @@ app.on('activate', function () {
     createWindow();
   }
 });
+
+// Check for updates
+autoUpdater.checkForUpdatesAndNotify();

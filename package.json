@@ -4,16 +4,21 @@
   "description": "An application made to simplify the creation of quest modifications for Toontown Infinite.",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joshsora/toontask-editor.git"
+  },
   "dependencies": {
     "dotenv": "4.0.0",
     "dotenv-expand": "4.0.1",
-    "electron-is-dev": "^0.3.0"
+    "electron-is-dev": "^0.3.0",
+    "electron-updater": "^2.20.1"
   },
   "scripts": {
     "react:start": "node scripts/react_start.js",
     "react:build": "node scripts/react_build.js",
     "electron:start": "electron ./",
-    "electron:build": "node scripts/electron_build.js",
+    "electron:build": "npx electron-builder build",
     "build": "npm run react:build && npm run electron:build"
   },
   "main": "main.js",
